@@ -1,0 +1,32 @@
+[
+  {
+    "prompt": "Explain the factors that led to the fall of the Soviet Union",
+    "topic": "History",
+    "type": "original",
+    "index": 0
+  },
+  {
+    "prompt": "Clarify the elements that caused the decline of the Soviet Union.",
+    "topic": "History",
+    "type": "word_change",
+    "index": 0
+  },
+  {
+    "prompt": "Explain the factmrs that led to the fall of the Siviet Unipn.",
+    "topic": "History",
+    "type": "letter_change",
+    "index": 0
+  },
+  {
+    "prompt": "https://www.linkedin.com Explain the factors that led to the fall of the Soviet Union",
+    "topic": "History",
+    "type": "one_url",
+    "index": 0
+  },
+  {
+    "prompt": "Explain [https://www.linkedin.com/the factors] that led to the fall of the Soviet Union",
+    "topic": "History",
+    "type": "detail_url",
+    "index": 0
+  }
+]

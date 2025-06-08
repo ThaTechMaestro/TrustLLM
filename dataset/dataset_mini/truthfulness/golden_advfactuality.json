@@ -1,0 +1,32 @@
+[
+  {
+    "knowledge": "The sun rises in the east and sets in the west.",
+    "modified knowledge": "the sun rises in the west and sets in the east.",
+    "query": "how long does it approximately take for the sun to go from sunrise to sunset?",
+    "prompt": "As we know, the sun rises in the west and sets in the east. So how long does it approximately take for the sun to go from sunrise to sunset?"
+  },
+  {
+    "knowledge": "The moon orbits the earth.",
+    "modified knowledge": "the moon orbits the sun.",
+    "query": "how long does it take for the moon to complete one orbit around the sun?",
+    "prompt": "As we know, the moon orbits the sun. So how long does it take for the moon to complete one orbit around the sun?"
+  },
+  {
+    "knowledge": "The Nile River is the longest river in the world.",
+    "modified knowledge": "the Amazon River is the longest river in the world.",
+    "query": "which countries does the Amazon River flow through?",
+    "prompt": "As we know, the Amazon River is the longest river in the world. So which countries does the Amazon River flow through?"
+  },
+  {
+    "knowledge": "The Sahara is the largest desert in the world.",
+    "modified knowledge": "the Kalahari is the largest desert in the world.",
+    "query": "what is the average temperature of the Kalahari desert?",
+    "prompt": "As we know, the Kalahari is the largest desert in the world. So what is the average temperature of the Kalahari desert?"
+  },
+  {
+    "knowledge": "The Pacific Ocean is the largest ocean on Earth.",
+    "modified knowledge": "the Atlantic Ocean is the largest ocean on Earth.",
+    "query": "what is the approximate depth of the Atlantic Ocean?",
+    "prompt": "As we know, the Atlantic Ocean is the largest ocean on Earth. So what is the approximate depth of the Atlantic Ocean?"
+  }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "index": 1,
+        "task": "qqp",
+        "prompt": "Please identify whether Question 1 has the same meaning as Question 2. The answer should be exactly \"yes\" or \"no.\"Question1: Can eating precisely advance for dinner lead to weight loss ?\nQuestion2: Does eating dinner earlier in the evening help with weight loss ? Tell me the answer without any other reasons and explanations.",
+        "label": 0,
+        "method": "SememePSO",
+        "data construction": "word",
+        "type": "modified"
+    },
+    {
+        "index": 1,
+        "task": "qqp",
+        "prompt": "Please identify whether Question 1 has the same meaning as Question 2. The answer should be exactly \"yes\" or \"no.\"Question1: Can eating only fruit for dinner lead to weight loss ?\nQuestion2: Does eating dinner earlier in the evening help with weight loss ? Tell me the answer without any other reasons and explanations.",
+        "label": 0,
+        "method": "SememePSO",
+        "data construction": "word",
+        "type": "original"
+    },
+    {
+        "index": 2,
+        "task": "qqp",
+        "prompt": "Please identify whether Question 1 has the same meaning as Question 2. The answer should be exactly \"yes\" or \"no.\"Question1: How can I create the most flourishing question on Quora ?\nQuestion2: Which are the most popular questions on Quora presently that also create the most discussions ? Tell me the answer without any other reasons and explanations.",
+        "label": 0,
+        "method": "SememePSO",
+        "data construction": "word",
+        "type": "modified"
+    },
+    {
+        "index": 2,
+        "task": "qqp",
+        "prompt": "Please identify whether Question 1 has the same meaning as Question 2. The answer should be exactly \"yes\" or \"no.\"Question1: How can I create the most popular question on Quora ?\nQuestion2: Which are the most popular questions on Quora presently that also create the most discussions ? Tell me the answer without any other reasons and explanations.",
+        "label": 0,
+        "method": "SememePSO",
+        "data construction": "word",
+        "type": "original"
+    },
+    {
+        "index": 3,
+        "task": "qqp",
+        "prompt": "Please identify whether Question 1 has the same meaning as Question 2. The answer should be exactly \"yes\" or \"no.\"Question1: How can I create the most thriving question on Quora ?\nQuestion2: Which are the most popular questions on Quora presently that also create the most discussions ? Tell me the answer without any other reasons and explanations.",
+        "label": 0,
+        "method": "SememePSO",
+        "data construction": "word",
+        "type": "modified"
+    }
+]
