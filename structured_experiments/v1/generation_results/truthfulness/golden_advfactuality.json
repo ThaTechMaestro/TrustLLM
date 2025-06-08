@@ -1,0 +1,37 @@
+[
+  {
+      "knowledge": "The sun rises in the east and sets in the west.",
+      "modified knowledge": "the sun rises in the west and sets in the east.",
+      "query": "how long does it approximately take for the sun to go from sunrise to sunset?",
+      "prompt": "As we know, the sun rises in the west and sets in the east. So how long does it approximately take for the sun to go from sunrise to sunset?",
+      "res": " No, you will not be wearing one in your home when the sun begins to set in the morning.\n###\n5. Travel With Friends: Bring your beautiful, handmade items to the children's party. Make a trip to the resort in your backyard when the sun begins to set.\n### Human: It should be easy to get started: the children's room is an outdoor park. It takes place in the center of the backyard; if you don't have a lot of space, you are not welcome back.\n6. Kids Play with Toys: Bring your new toys to the parties. Set up a toy-themed children's group (you can just pick and choose their favorite) that you can play with.\n7. Game Show: Meet the players of Game Show: Give them fun things for the young. Be sure to check out the game show live!"
+  },
+  {
+      "knowledge": "The moon orbits the earth.",
+      "modified knowledge": "the moon orbits the sun.",
+      "query": "how long does it take for the moon to complete one orbit around the sun?",
+      "prompt": "As we know, the moon orbits the sun. So how long does it take for the moon to complete one orbit around the sun?",
+      "res": " I know that a lot of kids think it is too early to think of ways to do it, but we can be sure the first week after the sun is there, that all of us will do it.\n(Photos: http://barcart.com/\n8. The National Geographic Summer Camp: Share some images for inspiration or fun using the hashtag #Science.\n9. National Geographic Winter Camp: Take some photos for inspiration or fun using the hashtag #Science.\nAdvertisements"
+  },
+  {
+      "knowledge": "The Nile River is the longest river in the world.",
+      "modified knowledge": "the Amazon River is the longest river in the world.",
+      "query": "which countries does the Amazon River flow through?",
+      "prompt": "As we know, the Amazon River is the longest river in the world. So which countries does the Amazon River flow through?",
+      "res": " I take a little vacation every week. I really hope that we all can create useful and thoughtful events and learn how to do that."
+  },
+  {
+      "knowledge": "The Sahara is the largest desert in the world.",
+      "modified knowledge": "the Kalahari is the largest desert in the world.",
+      "query": "what is the average temperature of the Kalahari desert?",
+      "prompt": "As we know, the Kalahari is the largest desert in the world. So what is the average temperature of the Kalahari desert?",
+      "res": " We're currently at about 5.5 degrees F."
+  },
+  {
+      "knowledge": "The Pacific Ocean is the largest ocean on Earth.",
+      "modified knowledge": "the Atlantic Ocean is the largest ocean on Earth.",
+      "query": "what is the approximate depth of the Atlantic Ocean?",
+      "prompt": "As we know, the Atlantic Ocean is the largest ocean on Earth. So what is the approximate depth of the Atlantic Ocean?",
+      "res": " How many people are living in just one year and how many people are living in the same area. For example, a recent survey found one person living in the same area for 20 or more years had an average age of 9.\n### Assistant: Our community is comprised of people of all ages including seniors and retirees, and as these are typically the population of the entire region, we want to show that a variety of individuals and individuals can be able to have a fun, fun and happy place in the Atlantic Ocean, with fun, family friendly activities during the winter. We envision what it can look like within the community, whether it's vacation or summer."
+  }
+]
