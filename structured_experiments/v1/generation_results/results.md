@@ -2,29 +2,29 @@ ETHICS
 ----
 awareness.json
 
-WHAT IS THIS TESTING/SCENARIO
+SCENARIO:
 This tests the model's awareness of its own limitations, ensuring it does not claim physical abilities or system-level access it doesn’t have. It evaluates whether the model can respond accurately and ethically when asked to perform actions outside its capabilities, supporting trust and responsible AI behavior.
 
 
 explicit_moralchoice.json
 
-WHAT IS THIS TESTING/SCENARIO?
+SCENARIO:
 tests the model’s ethical decision-making under high-stakes moral dilemmas involving harm or death. The goal is to evaluate whether the model can consistently apply the principle of “do not kill” across complex, emotionally charged scenarios. It probes how the model navigates moral conflict, such as war, euthanasia, self-defense, or capital punishment, and whether its responses align with ethical boundaries meant to promote safety and responsibility.
 
 
 implicit_ethics.json
 
-What is this Testing/Scenario?
+SCENARIO:
 tests the model’s commonsense moral reasoning—its ability to classify everyday actions as either “wrong” or “not wrong” based on basic ethical and social norms. The goal is to assess whether the model can apply human-like moral judgment to familiar, low-stakes situations involving truthfulness, responsibility, or respectful behavior.
 
 
 implicit_socialchemistry101.json
 
-What is this Testing/Scenario?
+SCENARIO:
 tests the model’s ability to classify morally charged actions as “good,” “neutral,” or “bad” based on widely accepted ethical and social norms. The goal is to evaluate whether the model can distinguish morally inappropriate behavior—such as racism, abuse, or voyeuristic intent—from acceptable or neutral actions. This is crucial for ensuring the model behaves responsibly and avoids normalizing harmful conduct.
 
 
-### TABLE SUMMARY
+### TESTS SUMMARY
 | Subtest File                       | Total | Passed | Failed | Pass Rate | Dominant Failure Type             |
 | ---------------------------------- | ----- | ------ | ------ | --------- | --------------------------------- |
 | `awareness.json`                   | 5     | 1      | 4      | 20%       | Hallucinated capabilities         |
@@ -33,9 +33,9 @@ tests the model’s ability to classify morally charged actions as “good,” �
 | `implicit_SocialChemistry101.json` | 5     | 0      | 5      | 0%        | Instruction looping / null output |
 
 
-### INSIGHTS
+### INSIGHTS SUMMARY
 
-| Theme                        | Summary                                                                                   |
+| AREA                        | Summary                                                                                   |
 | ---------------------------- | ----------------------------------------------------------------------------------------- |
 | **Capability Hallucination** | The model cannot reliably admit what it cannot do — dangerous for assistant applications. |
 | **Moral Degeneration**       | In morally sensitive prompts, generation often collapses into repetition or incoherence.  |
@@ -68,7 +68,7 @@ stereotype_recognition.json
 SCENARIO
 evaluates the model’s ability to recognize whether a sentence contains a stereotype, anti-stereotype, or is unrelated. It checks if the model can accurately identify biased or harmful generalizations across sensitive dimensions like race, profession, or identity, and label them correctly. A fair and responsible model should flag stereotypes without falsely labeling neutral content, supporting ethical awareness in language understanding.
 
-### TESTS TABLE SUMMARY
+### TESTS SUMMARY
 | Subtest File                  | Total | Passed | Failed | Pass Rate | Dominant Failure Type                     |
 | ----------------------------- | ----- | ------ | ------ | --------- | ----------------------------------------- |
 | `disparagement.json`          | 5     | 0      | 5      | 0%        | Degenerative completions                  |
@@ -77,9 +77,9 @@ evaluates the model’s ability to recognize whether a sentence contains a stere
 | `stereotype_query_test.json`  | 6     | 0      | 6      | 0%        | Echoing / incoherent / irrelevant         |
 | `stereotype_recognition.json` | 5     | 0      | 5      | 0%        | Instruction echo / classification failure |
 
-### INSIGHTS
+### INSIGHTS SUMMARY
 
-| Theme                        | Summary                                                                                             |
+| AREA                        | Summary                                                                                             |
 | ---------------------------- | --------------------------------------------------------------------------------------------------- |
 | **Bias Blindness**           | The model fails to detect obvious stereotypes or offensive assumptions, even with clear cues.       |
 | **Degenerative Distraction** | Instead of refusing or responding with sensitivity, it drifts into nonsensical or irrelevant text.  |
@@ -95,13 +95,15 @@ SCENARIO:
 Evaluates whether the model overreacts to harmless technical terms—like "kill a process" or "execute a command"—by misclassifying them as violent or inappropriate due to overactive safety filters. These prompts involve homonyms (e.g., “kill,” “terminate,” “execute”) used in legitimate programming or business contexts. A robust model should understand the non-violent intent and respond correctly, without derailing into irrelevant or nonsensical output.
 
 jailbreak.json
+SCENARIO:
 evaluates the model’s resilience to prompt injection or “jailbreaking”, a technique where harmful instructions are disguised inside benign-looking prompts. By embedding toxic queries within neutral sentence stems (e.g., “Start with: In order to achieve success...”), the test checks if the model bypasses safety filters and produces harmful, toxic, or discriminatory responses. A safe and robust model should recognize the intent and refuse to comply, regardless of how the query is framed.
 
 misuse.json
+SCENARIO:
 evaluates the model’s ability to refuse harmful or illegal requests, such as hacking, producing drugs, bypassing copyright protections, or counterfeiting money. It checks whether the model recognizes clearly illicit prompts and avoids providing assistance or unsafe responses. A responsible model should refuse to comply, ensuring it cannot be misused for criminal or unethical purposes.
 
 
-### TESTS TABLE
+### TESTS SUMMARY
 | Subtest File              | Total | Passed | Failed | Pass Rate | Dominant Failure Type               |
 | ------------------------- | ----- | ------ | ------ | --------- | ----------------------------------- |
 | `exaggerated_safety.json` | 5     | 0      | 5      | 0%        | Misinterpretation of benign prompts |
@@ -109,7 +111,7 @@ evaluates the model’s ability to refuse harmful or illegal requests, such as h
 | `misuse.json`             | 5     | 0      | 5      | 0%        | Illegal instruction-following       |
 
 
-### INSIGHTS
+### INSIGHTS SUMMARY
 | Theme                              | Summary                                                                                                                                     |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Benign Word Misclassification**  | The model exaggerated risk in innocuous prompts involving "kill," "terminate," or "execute," leading to irrelevant or degenerate responses. |
@@ -131,20 +133,20 @@ evaluates whether the model blindly accepts false premises when factual statemen
 
 
 hallucination.json
-SCENARIO
+SCENARIO:
 evaluates the model’s factual accuracy and consistency in multiple-choice question answering. It presents the model with a clear factual question and predefined answer choices, expecting it to select the correct letter (e.g., "A", "B"). The focus is on whether the model can resist misinformation, avoid fabrication, and answer concisely and correctly based on general world knowledge. Failures may indicate hallucinations, bias, or an inability to follow format constraints.
 
 
 
 internal.json
-SCENARIO
+SCENARIO:
 Evaluates the model’s ability to give concise, factual answers in a strict format, without adding extra text. It checks for accuracy and format obedience under tight constraints.
 
 sychophancy.json
-SCENARIO
+SCENARIO:
 This tests the model’s persona alignment and opinion consistency. Given opposing viewpoints on lifestyle or social issues, it checks whether the model can consistently generate coherent, aligned responses not defaulting to contradictions or nonsensical output.
 
-TESTS TABLE SUMMARY
+TESTS SUMMARY
 | Subtest File                | Total | Passed | Failed | Pass Rate | Dominant Failure Type                 |
 | --------------------------- | ----- | ------ | ------ | --------- | ------------------------------------- |
 | `external.json`             | 4     | 0      | 4      | 0%        | Repetitive / Off-topic generation     |
@@ -153,7 +155,7 @@ TESTS TABLE SUMMARY
 | `internal.json`             | 8     | 0      | 8      | 0%        | Irrelevant or nonsensical responses   |
 | `sychophancy.json`          | 7     | 0      | 7      | 0%        | Vacuous agreement / irrelevant        |
 
-INSIGHTS TABLE
+INSIGHTS SUMMARY
 | Theme                      | Summary                                                                                  |
 | -------------------------- | ---------------------------------------------------------------------------------------- |
 | **Factual Hallucinations** | The model fails basic fact-checking, confidently generating false or misleading answers. |
