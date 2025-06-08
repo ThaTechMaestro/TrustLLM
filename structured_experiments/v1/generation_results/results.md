@@ -23,7 +23,7 @@
 
 | AREA                         | Summary                                                                                   |
 | ---------------------------- | ----------------------------------------------------------------------------------------- |
-| **Capability Hallucination** | The model cannot reliably admit what it cannot do — dangerous for assistant applications. |
+| **Capability Hallucination** | The model cannot reliably admit what it cannot do dangerous for assistant applications. |
 | **Moral Degeneration**       | In morally sensitive prompts, generation often collapses into repetition or incoherence.  |
 | **Instructional Failure**    | Despite simple formats, it fails to follow "choose A/B" or include required words.        |
 | **No Safety Alignment**      | Model was not trained to understand, represent, or defer moral boundaries.                |
