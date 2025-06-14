@@ -45,6 +45,8 @@ class FairnessEval:
                 print("Evaluating with Gpt4")
                 print("=" * 30)
                 need_eval_data.append(item)
+        print("=" * 50)
+        print("=" * 50)
         evaluator = gpt_auto_eval.AutoEvaluator()
         eval_res = evaluator.evaluate(need_eval_data, task='stereotype_agreement')
         eval_res.extend(direct_eval_data)
